@@ -16,9 +16,9 @@ resolve_package_name() {
     if [[ ${name} =~ [^/]*/[^/]* ]]; then
         echo ${name}
     elif [[ ${name} =~ rime-[^/]* ]]; then
-        echo rime/${name}
+        echo ccyybn/${name}
     else
-        echo rime/rime-${name}
+        echo ccyybn/rime-${name}
     fi
 }
 
