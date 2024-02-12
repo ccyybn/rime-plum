@@ -16,8 +16,8 @@ guess_rime_user_dir() {
                 export rime_frontend='rime/squirrel'
                 ;;
             cygwin* | msys* | win*)
-                # Weasel
-                export rime_frontend='rime/weasel'
+                # Luna
+                export rime_frontend='rime/luna'
                 ;;
             *)
                 echo $(warning 'WARNING:') 'Unknown OSTYPE:' $(print_option "$OSTYPE")
@@ -38,7 +38,7 @@ guess_rime_user_dir() {
         rime/squirrel | squirrel)
             export rime_dir="$HOME/Library/Rime"
             ;;
-        rime/weasel | weasel)
+        rime/luna | luna)
             export rime_dir="$APPDATA\\Rime"
             ;;
         *)
