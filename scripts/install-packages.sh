@@ -74,8 +74,11 @@ install_files_from_package() {
                 | grep -v -e '\.custom\.yaml$' -e '\.recipe\.yaml$' -e '^recipe\.yaml$'
             ls *.txt 2> /dev/null
             ls *.gram 2> /dev/null
+            ls *.lua 2> /dev/null
             ls opencc/*.* 2> /dev/null \
                 | grep -e '\.json$' -e '\.ocd$' -e '\.txt$'
+            ls lua/*.* 2> /dev/null \
+                | grep -e '\.lua$'
         )
     )
     install_files "${data_files[@]}"
